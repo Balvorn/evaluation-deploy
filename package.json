@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "ng build --prod --env=test --base-href /eval/"
+    "build": "ng build --prod --env=leo --bh /evaluation-leo/",
+    "deploy": "ngh",
+    "publish": "npm run build && npm run deploy"
   },
   "private": true,
   "dependencies": {
@@ -29,6 +31,7 @@
     "@types/jasmine": "~2.8.3",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
+    "angular-cli-ghpages": "^0.5.2",
     "codelyzer": "^4.0.1",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
